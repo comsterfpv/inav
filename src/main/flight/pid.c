@@ -476,6 +476,7 @@ static float Get_PID_AirSpeed_Scaler(const float ScalingSpeed)
     if (AirSpeedValue > 0.0001f)
     {
       AirSpeed_Scaler = ScalingSpeed / AirSpeedValue;
+      AirSpeed_Scaler *= AirSpeed_Scaler;
     }
     else
     {
